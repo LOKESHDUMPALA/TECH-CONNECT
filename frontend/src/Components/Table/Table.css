@@ -1,0 +1,51 @@
+.table-component-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../Assets/Tables.png");
+    background-size: 100% 100%; /* desired background color*/ 
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+  /* Style for the table container */
+  .table-component-table-container {
+    border-radius: 50px;
+    padding: 30px;
+    width: 65%;
+    height: 65%;
+    background-color: #efe7e7; /* Add your desired background color */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Add a subtle box shadow */
+    border-radius: 8px; /* Add rounded corners */
+  }
+
+  .table-component-table-container h2{
+    text-align: center;
+    font-style:italic;
+    
+  }
+  
+  /* Style for the table */
+  .table-component-table {
+    font-family: 'Arial', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .table-component-table th,
+  .table-component-table td {
+    border: 3px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .table-component-table th {
+    background-color: #24bc45;
+    color: #333;
+  }
+  
+  .table-component-table tbody tr:hover {
+    background-color: #c9ce22;
+  }
+ 

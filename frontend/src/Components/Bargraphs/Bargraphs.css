@@ -1,0 +1,15 @@
+.bar-graph-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url("../Assets/Bargraphs_image.png");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+.card {
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+}

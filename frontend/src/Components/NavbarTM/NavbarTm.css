@@ -1,0 +1,39 @@
+.containerr {
+  text-align: center;
+  background-color: navy;
+  width: 100% ;
+  background-size: 100% 100%;
+  margin-left: 0px;
+  padding: 10px;
+color:#fff;
+ }
+ 
+
+.navv{
+  padding: 12px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+ 
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  margin-left: 0px;
+  gap: 220px;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  padding-right: 70px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color:white;
+  transition: color 0.3s ease;
+}
+
+.navbar-list a:hover {
+  color:red;
+}
+

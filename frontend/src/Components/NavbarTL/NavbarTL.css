@@ -1,0 +1,35 @@
+.Appp {
+  text-align: center;
+ }
+
+.navbarr {
+  background-color: #0c0c0ce0;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+ 
+.navb-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.navb-list li {
+  margin: 0 50px;
+}
+
+.navb-list a {
+  text-decoration: none;
+  padding-right: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navb-list a:hover {
+  color: blue;
+}
+

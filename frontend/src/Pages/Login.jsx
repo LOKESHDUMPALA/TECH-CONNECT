@@ -1,0 +1,130 @@
+import React, { useContext, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from "axios";
+import  './CSS/Login.css';
+import UserContext from '../Context/ContextAPI';
+import Logins from '../Components/Assets/Logins.png';
+const Login = () => {
+
+  const { setUserContext } = useContext(UserContext);
+
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  });
+
+  const handleChange = (e) => {
+    const { id, value} = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]:value,
+    }));
+  };
+
+  const handleSubmit = async(e) => {
+            e.preventDefault();
+         try {
+          const response = await axios.post("http://localhost:4000/login",formData,{
+            headers: {
+              "Content-Type": "application/json",
+            }
+           });
+          //  console.log(response.data);
+          if(response.status===200){
+                if(response.data.success){ 
+                  if(response.data.pwd){
+                    alert("user logged successfully");  
+                      const userString = response.data.user;
+                       const user = JSON.parse(userString);
+                       setUserContext(user); //updating user data using contextAPI
+
+                        if(user.role ==="Admin") navigate("/admin");
+                        else if(user.role==="TeamLead") navigate("/teamlead" );
+                        else navigate("/teammember");
+                  }
+                  else {
+                    alert("wrong password!!!....please enter coorect password");
+                    setFormData({
+                      ...formData,
+                      password: ''
+                    });
+                }
+              }
+                else {
+                  alert("user not registered!!!...please register");
+                  navigate("/signup");
+                }
+          }
+          else {
+            alert("failed !!");
+            navigate("/login");
+          }
+
+         } catch(err){
+         console.log(err);
+      };
+  };
+
+  return (
+    <section className="vh-100" style={{ backgroundImage: `url(${Logins})`, backgroundSize:'100%'}}>
+      <div className="container py-5 h-100">
+        <div className="row d-flex justify-content-center align-items-center h-100">
+          <div className="col-12 col-md-8 col-lg-6 col-xl-5 ">
+            <div className="card shadow-2-strong" style={{ borderRadius: '1rem' }}>
+              <div className="card-body p-5">
+                <h3 className="mb-5 text-center " style={{fontSize: "1.6rem"}}>LOGIN</h3>
+
+                <form onSubmit={handleSubmit}>
+                <label className="form-label" htmlFor="email">
+                      UserName
+                    </label>
+                  <div className="form-outline mb-4">
+                    <input
+                      type="email"
+                      id="email"
+                      className="form-control form-control-lg"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="Enter Your Email"
+                    />
+
+                  </div>
+
+                  <div className="form-outline mb-4">
+                  <label className="form-label" htmlFor="password">
+                      Password
+                    </label>
+                    <input
+                      type="password"
+                      id="password"
+                      className="form-control form-control-lg"
+                      value={formData.password}
+                      onChange={handleChange}
+                      placeholder="Password"
+                    />
+                    
+                  </div>
+
+
+                  <button className="btn btn-primary btn-lg btn-block d-flex justify-content-center align-items-center w-100 " type="submit">
+                    Login
+                  </button>
+
+                  <hr className="my-4" />
+
+                  <button className="btn btn-lg btn-block btn-primary w-100 " style={{ backgroundColor: '#dd4b39' }} type="submit">
+                    <i className="fab fa-google me-2 " ></i> Sign in with Google
+                  </button>
+                  <p className="fw-bold mt-5 mb-0">Don't Have an account? <Link to="/signup" className="text-primary "><u>SIGNUP</u></Link></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Login;

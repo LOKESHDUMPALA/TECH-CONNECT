@@ -1,0 +1,63 @@
+.cal-bg
+{
+  background-image:url("../Assets/Calender_background_image.png");
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+#calendar-container {
+  width: 50%;
+  margin: 0 auto;
+  background-color: black;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.fc-day:hover {
+  background-color:green;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.fc-day:nth-child(even):hover {
+  background-color:green;
+}
+
+.fc-day:nth-child(odd):hover {
+  background-color:purple;
+}
+
+.fc-event-title {
+  color: #333;
+  font-weight: bold;
+}
+
+.fc-toolbar-title {
+  font-size: 1.5em;
+  color:white;
+}
+
+.fc-prev-button, .fc-next-button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.fc-toolbar-chunk {
+  margin-right: 10px;
+}
+
+.fc-col-header-cell a {
+  color:white;
+}
+
+
+.fc-daygrid-day-number {
+  color:white;
+}
+
+.fc-day.fc-day-today {
+  background-color: rgb(43, 14, 169) !important;
+}
