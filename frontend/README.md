@@ -1,70 +1,46 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TEAM_INFO
+OVERVIEW :    
+ * TeamInfo is a comprehensive team management system designed to streamline communication and facilitate efficient progress tracking within a team. The system caters to three main roles: Admin, Team Lead, and Team Member.
+ROLE BASED ACCESS :
+* ADMIN  : Monitors the numbers of projects completed and top team performance and overall team progress with team_names ....can also view a  particular team progress individually by  clicking on the desired team ..it displays the particular team details individually all the team-members with TeamLead progress if necessary.
+* TEAM-LEAD: Manages their team efficiently, updates personal progress, and oversees the progress of individual team members..
+* TEAM-MEMBER : Focuses on their tasks, updates personal progress, and reports any issues encountered during the work..
+Automated Issue Reporting :
+IMPACT : 
+* TeamInfo ensures transparency, accountability, and effective communication within the team. By providing a centralized platform for tracking progress and addressing issues promptly, the system contributes to a more productive and collaborative work environment.
 
-## Available Scripts
+## Frontend
 
-In the project directory, you can run:
+This is the frontend part of the TEAM_INFO project.
 
-### `npm start`
+### Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The frontend is built using React and includes various libraries for UI components and data visualization.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technologies Used
 
-### `npm test`
+- React
+- React Router DOM
+- Bootstrap
+- Styled Components
+- Recharts
+- Axios
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Getting Started
 
-### `npm run build`
+To get started with the frontend development, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install Node.js and npm if not already installed. You can download them from [here](https://nodejs.org/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Clone the repository:
+   git clone <repository_url>
+   
+3. Navigate to the frontend directory:
+     cd frontend;
+     
+4. Install dependencies:
+      npm install @fortawesome/fontawesome-free@^6.5.1 @fullcalendar/daygrid@^6.1.10 @fullcalendar/react@^6.1.10 @testing-library/jest-dom@^5.17.0 @testing-library/react@^13.4.0 @testing-library/user-event@^13.5.0 axios@^1.6.2 bootstrap@^5.3.2 react@^18.2.0 react-bootstrap@^2.9.1 react-dom@^18.2.0 react-router-dom@^6.21.1 react-scripts@5.0.1 recharts@^2.10.3 styled-components@^6.1.1 web-vitals@^2.1.4;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. Start the development server:
+    npm start

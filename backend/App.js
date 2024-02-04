@@ -6,7 +6,7 @@ const cors = require('cors');
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
 const app = express();
-const DB_URI="mongodb+srv://lokeswararaodumpala2004:1IaYdSWsAlPSuQW2@cluster0.eurlp56.mongodb.net/Team_Info_DB?retryWrites=true&w=majority"
+const DB_URI="mongodb+srv://lokeswararaodumpala2004:1IaYdSWsAlPSuQW2@cluster0.eurlp56.mongodb.net/Team_Info_DB?retryWrites=true&w=majority";
 mongoose.connect(DB_URI).then(()=>{
 console.log("connected to db");
 }).catch((err)=>{
@@ -165,6 +165,6 @@ app.get("/average_progress", async (req,res) => {
 
 
 app.listen(4000,function(){
-
+  
     console.log("server started on 4000");
 });
