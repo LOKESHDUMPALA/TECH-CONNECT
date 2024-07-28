@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+}
+
+/* Base styles for nv class */
+.nv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  background-color: #354259;
+  z-index: 1000;
+  position: relative;
+}
+
+/* Styles for the nv-logo */
+.nv-logo {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the hamburger menu */
+.nv-hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Styles for the sidebar menu (replacing .sidebar) */
+.nv-links {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+.nav-link-custom {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link-custom:hover {
+  color: pink;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+  .nv-hamburger {
+    display: block;
+  }
+
+  .nv-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    background-color: #333;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .nv-links.open {
+    display: flex;
+  }
+}

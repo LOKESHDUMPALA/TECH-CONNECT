@@ -1,0 +1,16 @@
+.company-container {
+    position: relative;
+  }
+  
+  .company-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Assets/stud.png"); 
+    background-size: cover;
+    margin-top: 50px;
+    background-position: center;
+    z-index: -1; 
+  }

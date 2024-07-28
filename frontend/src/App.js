@@ -4,9 +4,9 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Login from './Pages/Login.jsx';
 import Signup from './Pages/Signup.jsx';
 import Home from './Pages/Home.jsx';
-import Admin from './Components/Admin/Admin.jsx';
-import TeamLead from './Components/TeamLead/TeamLead.jsx';
-import TeamMember from './Components/TeamMember/TeamMember.jsx';
+import Student from './Components/Student/Student.jsx';
+import Company from './Components/Company/Company.jsx';
+
 
 function App() {
   return (
@@ -16,9 +16,8 @@ function App() {
         <Route path='/' element={<Home />}/> 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />}/>
-        <Route path="/admin/*" element={<Admin />}/>
-        <Route path="/teamlead/*" element={<TeamLead />} />
-        <Route path="/teammember/*" element={<TeamMember/>} />
+        <Route path="/student/*" element={ <Student /> } />
+        <Route path="/company/*" element = { <Company />} />
       </Routes>
       </BrowserRouter>
     </div>

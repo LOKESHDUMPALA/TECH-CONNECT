@@ -1,0 +1,70 @@
+/* Ensure the body and root elements take the full height of the page */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .events-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    min-height: 100vh;
+    background-color: antiquewhite; /* Apply background color to full page */
+  }
+  
+  .events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .data-square-box {
+    padding: 20px;
+    color: #333;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .data-square-box p {
+    margin: 10px 0;
+  }
+  
+  .data-square-box span {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .apply-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (min-width: 601px) {
+    .events-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .events-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

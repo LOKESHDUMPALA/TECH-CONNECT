@@ -7,7 +7,7 @@ const Home = () => {
       
       <header className="header">
         <a className="logo">
-          <i className="fas fa-users"></i>teams
+          <i className="fas fa-users"></i>Tech_Connect
         </a>
         <nav className="nav-items">
           <a href="/login">LOGIN</a>
@@ -16,24 +16,19 @@ const Home = () => {
       </header>
       <main>
         <div className="intro">
-          <h1 className="assiassi">TEAM INFO</h1>
-          <p className="lokiloki">The Project Management Dashboard.....</p>
+          <h1 className="assiassi">TECH CONNECT</h1>
+          <p className="lokiloki">The Event Management Platform.....</p>
         </div>
         <div className="achievements">
           <div className="work">
             <i className="fas fa-user-shield"></i>
-            <p className="work-heading">ADMIN</p>
-            <p className="work-text">Administrator with full access</p>
+            <p className="work-heading">ORGANIZATION</p>
+            <p className="work-text">post New Events</p>
           </div>
           <div className="work">
             <i className="fas fa-user-tie"></i>
-            <p className="work-heading">TEAM LEAD</p>
-            <p className="work-text">Leader of the team</p>
-          </div>
-          <div className="work">
-            <i className="fas fa-users"></i>
-            <p className="work-heading">TEAM MEMBER</p>
-            <p className="work-text">Member of the team</p>
+            <p className="work-heading">STUDENT</p>
+            <p className="work-text">aware of all events</p>
           </div>
         </div>
       </main>

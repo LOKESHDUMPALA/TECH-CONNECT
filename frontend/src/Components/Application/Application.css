@@ -1,0 +1,62 @@
+.application-container {
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .table-container {
+    width: 100%;
+    max-width: 90%;
+    overflow-x: auto;
+    border-radius: 10%;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 12px;
+    font-size: 20px;
+    border: 1px solid black;
+  }
+  
+  th {
+    background-color: #354259;
+    color: white;
+  }
+  
+  td {
+    background-color: white;
+  }
+  
+  /* Hover effect */
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    th,
+    td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    th,
+    td {
+      font-size: 10px;
+      padding: 6px;
+    }
+  }
+  
