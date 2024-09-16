@@ -7,7 +7,7 @@ const Home = () => {
       
       <header className="header">
         <a className="logo">
-          <i className="fas fa-users"></i>Tech_Connect
+          <i className=""></i>TECH_CONNECT
         </a>
         <nav className="nav-items">
           <a href="/login">LOGIN</a>
@@ -16,20 +16,8 @@ const Home = () => {
       </header>
       <main>
         <div className="intro">
-          <h1 className="assiassi">TECH CONNECT</h1>
-          <p className="lokiloki">The Event Management Platform.....</p>
-        </div>
-        <div className="achievements">
-          <div className="work">
-            <i className="fas fa-user-shield"></i>
-            <p className="work-heading">ORGANIZATION</p>
-            <p className="work-text">post New Events</p>
-          </div>
-          <div className="work">
-            <i className="fas fa-user-tie"></i>
-            <p className="work-heading">STUDENT</p>
-            <p className="work-text">aware of all events</p>
-          </div>
+          <h1 className="assiassi"></h1>
+          <p className="lokiloki"></p>
         </div>
       </main>
       <footer className="footer">
