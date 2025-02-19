@@ -22,7 +22,7 @@ const PostEvent = () =>{
   const handleSubmit = async(e) => {
     e.preventDefault();
      try{
-      const response = await axios.post("https://tech-connect-backend-7.onrender.com/postevent",eventData,{
+      const response = await axios.post("https://tech-connect-backend-7.onrender.com/api/events/postevent",eventData,{
         headers: {
           "Content-Type": "application/json",
         }

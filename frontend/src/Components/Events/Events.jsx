@@ -18,7 +18,7 @@ const Events = ({ events }) => {
 
   const handlePatchRequest = async (Semail, Cemail) => {
     try {
-      const response = await axios.patch('https://tech-connect-backend-7.onrender.com/applied', {
+      const response = await axios.patch('https://tech-connect-backend-7.onrender.com/api/company/applied', {
         Semail: Semail,
         Cemail: Cemail,
       });

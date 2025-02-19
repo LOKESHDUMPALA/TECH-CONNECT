@@ -31,7 +31,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://tech-connect-backend-7.onrender.com/signup", formData, {
+      const response = await axios.post("https://tech-connect-backend-7.onrender.com/api/auth/signup", formData, {
         headers: {
           "Content-Type": "application/json",
         }

@@ -19,12 +19,12 @@ const UserProvider = ({children}) => {
     const fetchData = async () =>{
        
           try{
-            const response = await axios.get("https://tech-connect-backend-7.onrender.com/allposts");
+            const response = await axios.get("https://tech-connect-backend-7.onrender.com/api/events/allposts");
             const data = response.data;
             setAllpost(data);
 
             if(user && user.role==="Institute/Company") {
-              const companyResponse = await axios.get(`https://tech-connect-backend-7.onrender.com/company/${user.email}`);
+              const companyResponse = await axios.get(`https://tech-connect-backend-7.onrender.com/api/company/company/${user.email}`);
                 console.log(companyResponse.data.students);
                 const students = companyResponse.data.students;
                 setAppliedData(students);

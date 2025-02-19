@@ -23,7 +23,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://tech-connect-backend-7.onrender.com/login", formData, {
+      const response = await axios.post("https://tech-connect-backend-7.onrender.com/api/auth/login", formData, {
         headers: {
           "Content-Type": "application/json",
         }
@@ -33,8 +33,8 @@ const Login = () => {
         if (response.data.success) {
           if (response.data.pwd) {
             alert("user logged successfully");
-            const userString = response.data.user;
-            const user = JSON.parse(userString);
+          
+            const user = response.data.user;
             setUserContext(user);
 
             if (user.role === "Student") navigate("/student");
