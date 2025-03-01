@@ -26,6 +26,11 @@ h3 {
   height: 100%;
 }
 
+/* Add a margin for the spinner */
+.spinner-border {
+  margin-right: 5px;
+}
+
 @media (max-width: 1199.98px) {
   .card-registration .img-fluid {
     display: none;
